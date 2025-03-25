@@ -1,8 +1,8 @@
 # Aplikasi Pencatat Pengeluaran
 
 Aplikasi pencatat pengeluaran yang modern dan mudah digunakan, dibangun dengan Flutter. Aplikasi ini membantu Anda melacak pengeluaran harian dengan fitur visualisasi data yang informatif.
-(README.md ini di prompt dengan AI untuk memperbagus tampilan penulisan)
-Youtube:
+(README.md ini di prompt dengan AI untuk memperbagus tampilan penulisan) \
+Link Youtube: [DISINI](https://youtu.be/Ma4Rn5w3KnE)
 
 ## Fitur Utama
 
