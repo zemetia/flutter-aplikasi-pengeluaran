@@ -1,3 +1,5 @@
+import 'package:uuid/uuid.dart';
+
 class Expense {
   final String id;
   String judul;
@@ -13,7 +15,7 @@ class Expense {
     required this.tag,
   });
 
-  // Mengkonversi Expense ke Map
+  // Mengkonversi Expense ke Map untuk SQLite
   Map<String, dynamic> toMap() {
     return {
       'id': id,
@@ -24,14 +26,30 @@ class Expense {
     };
   }
 
-  // Membuat Expense dari Map
+  // Membuat Expense dari Map dari SQLite
   factory Expense.fromMap(Map<String, dynamic> map) {
     return Expense(
-      id: map['id'],
-      judul: map['judul'],
-      jumlah: map['jumlah'],
-      tanggal: DateTime.parse(map['tanggal']),
-      tag: map['tag'],
+      id: map['id'] as String,
+      judul: map['judul'] as String,
+      jumlah: map['jumlah'] as double,
+      tanggal: DateTime.parse(map['tanggal'] as String),
+      tag: map['tag'] as String,
+    );
+  }
+
+  // Membuat Expense baru
+  factory Expense.create({
+    required String judul,
+    required double jumlah,
+    required DateTime tanggal,
+    required String tag,
+  }) {
+    return Expense(
+      id: const Uuid().v4(),
+      judul: judul,
+      jumlah: jumlah,
+      tanggal: tanggal,
+      tag: tag,
     );
   }
 }

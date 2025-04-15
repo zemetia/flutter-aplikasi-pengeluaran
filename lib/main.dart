@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
+import 'package:sqflite_common_ffi_web/sqflite_ffi_web.dart';
 import 'screens/home_page.dart';
+// import 'database/database_helper.dart';
 
 void main() async {
+  // Inisialisasi database factory untuk SQLite
+  sqfliteFfiInit();
+  databaseFactory = databaseFactoryFfiWeb;
+
   WidgetsFlutterBinding.ensureInitialized();
+  // await DatabaseHelper.instance._initDB('expenses.db');
   await initializeDateFormatting('id_ID', null);
+
   runApp(const MyApp());
 }
 

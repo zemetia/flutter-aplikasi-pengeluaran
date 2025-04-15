@@ -1,8 +1,11 @@
 # Aplikasi Pencatat Pengeluaran
 
 Aplikasi pencatat pengeluaran yang modern dan mudah digunakan, dibangun dengan Flutter. Aplikasi ini membantu Anda melacak pengeluaran harian dengan fitur visualisasi data yang informatif.
-(README.md ini di prompt dengan AI untuk memperbagus tampilan penulisan) \
-Link Youtube: [DISINI](https://youtu.be/Ma4Rn5w3KnE)
+(README.md ini di prompt dengan AI untuk memperbagus tampilan penulisan)
+Youtube:
+
+Tugas 1:
+menggunakan Sqflite untuk database, tetapi menyesuaikan dengan laptop saya yang kentang yang jalankannya pakai chrome, jadi pakai `sqflite_ffi_web` agar bisa berjalan normal
 
 ## Fitur Utama
 
@@ -85,20 +88,16 @@ lib/
 - intl (untuk format tanggal dan mata uang)
 - uuid (untuk generate ID unik)
 
-## Kontribusi
-
-Silakan berkontribusi dengan membuat pull request atau melaporkan issues.
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
 ## Screenshot Aplikasi
 
 [Tambahkan screenshot aplikasi di sini]
 
-## Kontak
+![Image](https://github.com/user-attachments/assets/63c71fb7-5857-4214-a95f-6284cc7d1e90)
 
-Jika ada pertanyaan atau saran, silakan hubungi:
-- Email: [email@example.com]
-- GitHub: [username]
+![Image](https://github.com/user-attachments/assets/3f1c99cf-b944-4823-b933-68b2766f08e8)
+
+![Image](https://github.com/user-attachments/assets/b1910fce-e6a1-465c-bc12-4f1e7925564f)
+
+![Image](https://github.com/user-attachments/assets/9641ffc3-a9fb-4f61-8510-588e2c7c1fee)
+
+![Image](https://github.com/user-attachments/assets/cd2aa568-470d-4a54-8ade-ac66dfad9487)
